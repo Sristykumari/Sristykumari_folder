@@ -1,29 +1,28 @@
-import java.util.Scanner;
 public class Conditional {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        // Example of if-else
+        int a = 10;
+        int b = 20;
 
-        System.out.print("Enter your age: ");
-        int age = sc.nextInt();
-        int number = sc.nextInt();
-        if (age >= 18) {
-            System.out.println("You are eligible to vote.");
+        if (a > b) {
+            System.out.println("a is greater than b");
         } else {
-            System.out.println("You are not eligible to vote.");
+            System.out.println("b is greater than or equal to a");
         }
-        if(number % 2 == 0) {
-            System.out.println(number + " is even.");
-        } else {
-            System.out.println(number + " is odd.");
-        }   
 
-        if(age < 13) {
-            System.out.println("You are a child.");
-        } else if(age >= 13 && age < 20) {
-            System.out.println("You are a teenager.");
+        // Example of nested if
+        int score = 85;
+
+        if (score >= 90) {
+            System.out.println("Grade: A");
+        } else if (score >= 80) {
+            System.out.println("Grade: B");
+        } else if (score >= 70) {
+            System.out.println("Grade: C");
+        } else if (score >= 60) {
+            System.out.println("Grade: D");
         } else {
-            System.out.println("You are an adult.");
+            System.out.println("Grade: F");
         }
-        sc.close();
     }
 }

@@ -46,7 +46,7 @@ public class Solution {
         // } else {
         //     System.out.println("You are not eligible for the loan.");
         // }
-         int basic = sc.nextInt();
+        int basic = sc.nextInt();
         char grade = sc.next().charAt(0);
 
         double hra = 0.20 * basic;

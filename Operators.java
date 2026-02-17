@@ -1,25 +1,37 @@
 public class Operators {
     public static void main(String[] args) {
-                System.out.println("Java Operators");
+        int a = 10;
+        int b = 5;
 
-        // Assignment operator
-      int i = 10;
-      int j = 20;
-      int k = i = 100;
-      System.out.println("Value of i: " + i); // Outputs 100
-      System.out.println("Value of j: " + j); // Outputs 20
-      System.out.println("Value of k: " + k); // Outputs 100
-      // Arithmetic operators (+, -, *, /, %)
-      int sum = i + j;
-      int difference = j - i;
-      int product = i * j;
-      int quotient = j / i;
-      int remainder = j % i;
-      System.out.println("Sum: " + sum);
-      System.out.println("Difference: " + difference);
-      System.out.println("Product: " + product);
-      System.out.println("Quotient: " + quotient);
-      System.out.println("Remainder: " + remainder);
-      
+        // Arithmetic Operators
+        System.out.println("Addition: " + (a + b)); // 15
+        System.out.println("Subtraction: " + (a - b)); // 5
+        System.out.println("Multiplication: " + (a * b)); // 50
+        System.out.println("Division: " + (a / b)); // 2
+        System.out.println("Modulus: " + (a % b)); // 0
+
+        // Relational Operators
+        System.out.println("Equal to: " + (a == b)); // false
+        System.out.println("Not equal to: " + (a != b)); // true
+        System.out.println("Greater than: " + (a > b)); // true
+        System.out.println("Less than: " + (a < b)); // false
+        System.out.println("Greater than or equal to: " + (a >= b)); // true
+        System.out.println("Less than or equal to: " + (a <= b)); // false
+
+        // Logical Operators
+        boolean x = true;
+        boolean y = false;
+        System.out.println("Logical AND: " + (x && y)); // false
+        System.out.println("Logical OR: " + (x || y)); // true
+        System.out.println("Logical NOT: " + (!x)); // false
+
+        // Assignment Operators
+        int c = a; // c = 10
+        c += b;    // c = c + b -> c = 15
+        c -= b;    // c = c - b -> c = 10
+        c *= b;    // c = c * b -> c = 50
+        c /= b;    // c = c / b -> c = 10
+        c %= b;    // c = c % b -> c = 0
+        System.out.println("Final value of c: " + c); // 0
     }
 }

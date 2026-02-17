@@ -1,52 +1,55 @@
-import java.util.*;
+import java.util.Scanner;
+
 public class Days {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int day = sc.nextInt();
-        if(day ==1){
-            System.out.println("Monday");
-        } else if(day == 2){
-            System.out.println("Tuesday");
-        } else if(day == 3){
-            System.out.println("Wednesday");
-        } else if(day == 4){
-            System.out.println("Thursday");
-        } else if(day == 5){
-            System.out.println("Friday");
-        } else if(day == 6){
-            System.out.println("Saturday");
-        } else if(day == 7){
-            System.out.println("Sunday");
-        } else {
-            System.out.println("Invalid day number. Please enter a number between 1 and 7.");
+        String dayName;
+          if(day < 1 || day > 7) {
+            dayName = "Invalid day";
+        } else if(day == 1) {
+            dayName = "Monday";
+        } else if(day == 2) {
+            dayName = "Tuesday";
+        } else if(day == 3) {
+            dayName = "Wednesday";
+        } else if(day == 4) {
+            dayName = "Thursday";
+        } else if(day == 5) {
+            dayName = "Friday";
+        } else if(day == 6) {
+            dayName = "Saturday";
+        } else if(day == 7) {
+            dayName = "Sunday";
         }
 
         switch (day) {
             case 1:
-                System.out.println("Monday");
+                dayName = "Monday";
                 break;
             case 2:
-                System.out.println("Tuesday");
+                dayName = "Tuesday";
                 break;
             case 3:
-                System.out.println("Wednesday");
+                dayName = "Wednesday";
                 break;
             case 4:
-                System.out.println("Thursday");
+                dayName = "Thursday";
                 break;
             case 5:
-                System.out.println("Friday");
+                dayName = "Friday";
                 break;
             case 6:
-                System.out.println("Saturday");
+                dayName = "Saturday";
                 break;
             case 7:
-                System.out.println("Sunday");
+                dayName = "Sunday";
                 break;
             default:
-                System.out.println("Invalid day number. Please enter a number between 1 and 7.");
+                dayName = "Invalid day";
         }
 
+        System.out.println("The day is: " + dayName);
         sc.close();
     }
 }
