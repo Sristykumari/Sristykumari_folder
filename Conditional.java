@@ -24,5 +24,6 @@ public class Conditional {
         } else {
             System.out.println("Grade: F");
         }
+
     }
 }
